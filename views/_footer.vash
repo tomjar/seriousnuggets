@@ -1,0 +1,5 @@
+<footer id="sticky-footer" class="footer fixed-bottom bg-dark">
+  <div class="container-fluid text-center">
+    <small><a href="/about">about</a></small>
+  </div>
+</footer>

@@ -1,0 +1,44 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    @html.block('_toastr_display', function(model){
+      @html.include('_toastr_display', model)
+    })
+    <h1>@model.title</h1>
+        <table class="table">
+      <tr>
+        <th>header</th>
+        <th>create timestamp</th>
+        <th>modify timestamp</th>
+        <th>is published?</th>
+        <th>category</th>
+        <th></th>
+      </tr>
+    @model.posts.forEach(function(item){
+      <tr>
+	      <td>@item.header</td>
+        <td>@item.createtimestamp</td>
+        <td>@item.modifytimestamp</td>
+        <td>@item.ispublished</td>
+        <td>@item.category</td>
+        <td>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="btn btn-default dropdown-item" href='/admin/update/@item.id'>edit</a>
+              @if (item.ispublished){
+                <a class="btn btn-default dropdown-item" href='/admin/deactivate/@item.id'>deactivate</a>
+              }else{
+                <a class="btn btn-default dropdown-item" href='/admin/activate/@item.id'>activate</a>
+              }
+                <a class="btn btn-danger dropdown-item" href='/admin/delete/@item.id'>delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    })
+    </table>
+  })
+})

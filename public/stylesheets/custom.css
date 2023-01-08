@@ -1,0 +1,25 @@
+
+   
+   div.content {
+     min-height: 1500px;
+  }
+    
+   .sidenav{
+     min-height: 1500px;
+   }
+
+   footer{
+     height: 4em;
+   }
+   
+   p {
+    text-indent: 3em;
+   }
+   
+   @media screen and (max-width: 767px) {
+     .sidenav{
+       height: auto;
+       padding: 15px;
+     }
+     div.content {height: auto;} 
+   }

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/" title="home">
+    <img src="/images/banner.png" width="30" height="30" class="d-inline-block align-top" alt="seriousnuggets">
+    seriousnuggets
+  </a>
+    @if (model.isauthenticated){
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            administration
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/admin/">dashboard</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/admin/events">events</a>
+            <a class="dropdown-item" href="/admin/settings">settings</a>
+            <a class="dropdown-item" href="/admin/posts">posts</a>
+            <a class="dropdown-item" href="/admin/add">add new post</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item float-right">
+        <a class="nav-link" href="/logout">logout <span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
+  }
+</nav>

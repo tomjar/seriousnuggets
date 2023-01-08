@@ -1,0 +1,43 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    @html.block('_toastr_display', function(model){
+      @html.include('_toastr_display', model)
+    })
+    <h1 title="last 30 days">@model.title</h1>
+
+    <div class="d-flex flex-wrap flex-row bd-highlight mb-3">
+      @model.lastThirtyDaysPosts.forEach(function(item){
+          <div class="p-1 bd-highlight">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title"></h3>
+              <span>
+                <a href="/post/@item.post.name" title="@item.post.header">
+                  @item.post.header
+                </a>
+              </span>
+              <br />
+              <span>
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item border-0">
+                     <span style="font-size:xx-small">by <a href="/about" >Thomas Reese</a></span>
+                  </li>
+                  <li class="list-group-item border-0">
+                      <i style="font-size:xx-small;">first published on @item.post.createtimestamp UTC</i>
+                      <br />
+                    @if (item.post.modifytimestamp) {
+                      <i style="font-size:xx-small;">last updated on @item.post.modifytimestamp UTC</i>
+                    }
+                  </li>
+                </ul>
+              </span>
+            </div>
+        </div>
+      </div>
+      })
+      </div>
+  })
+  @html.block('archive', function(model){
+    @html.include('_archive', model)
+  })
+})

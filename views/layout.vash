@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@model.title</title>
+  <link rel="shortcut icon" type="image/png" href="/images/seriousnuggets.ico"/>
+
+  <link rel="stylesheet" href="/stylesheets/theme.css" />
+  <link rel="stylesheet" href="/stylesheets/trumbowyg.css" />
+  <link rel="stylesheet" href="/stylesheets/toastr.css" />
+  <link rel='stylesheet' href='/stylesheets/custom.css' />
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/umd/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+  <script src="/javascripts/trumbowyg.js"></script>
+  <script src="/javascripts/toastr.js"></script>
+  <script src="/javascripts/nuggetnova.js"></script>
+</head> 
+
+<body>
+  <div class="container-fluid">
+    <div class="row content p-3">
+      <div class="col-sm-3 sidenav">
+        @html.include('_sidelinks', model)
+        @html.block('archive')
+      </div>
+      <div class="col-sm-9 main">
+        @html.block('content')
+      </div>
+    </div>
+  </div>
+  @html.include('_footer')
+  @html.block('_toastr_display')
+</body>
+</html>

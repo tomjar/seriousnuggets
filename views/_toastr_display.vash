@@ -1,0 +1,13 @@
+
+@if(model.toastr_messages){
+  <script>
+    $( document ).ready(function() {
+      let jsonToastrMessages = JSON.parse('@html.raw(model.toastr_messages)');
+
+      jsonToastrMessages.forEach(function(item){
+        NuggetNova.showToastrMessage(item.type, item.msg);
+      })
+    })
+
+  </script>
+  }
