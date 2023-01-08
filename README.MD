@@ -4,7 +4,7 @@
 *  So far this has been a huge and fun learning experience. By no means is the code in this repository perfect and neither do I advertise this! This website is currently deployed https://seriousnuggets.me/
 
 
-## Seriousnuggets is a simple blogging website project developed using Nodejs, express, the vash template engine, PostgreSQL database and now Strapi.io.
+## Seriousnuggets is a simple blogging website project developed using Nodejs, express, the vash template engine, PostgreSQL database
 
 * Key components:
   * authentication/login which allows access to the publishing of new blog posts
