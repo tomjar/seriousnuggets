@@ -1,11 +1,10 @@
-# Nuggetnova (simple blogging website)
+# Seriousuggets (simple blogging website)
+* Thanks, the project now is set up as a simple static website so I dont have to deal with database drama. The code that is published and live at https://seriousnuggets.me is the static file version.
 
-* *Dude, there are like a million off the shelf blogging ready templates that you could use man, why even bother with creating a blogging website from scratch?*
-  * **I wanted to do something myself and have a deep understanding of its flaws and potential benefits. I have always wanted to build a website using the Nodejs framework. I do realize that there are probably better alternatives for blogging such as Wordpress and others. This is a personal project that I have been wanting to do for a long time.**
-* So far this has been a huge and fun learning experience. By no means is the code in this repository perfect and neither do I advertise this! This website is currently deployed https://seriousnuggets.me/
+*  So far this has been a huge and fun learning experience. By no means is the code in this repository perfect and neither do I advertise this! This website is currently deployed https://seriousnuggets.me/
 
 
-## Nuggetnova is a simple blogging website project developed using Nodejs, express, the vash template engine, PostgreSQL database and now Strapi.io.
+## Seriousnuggets is a simple blogging website project developed using Nodejs, express, the vash template engine, PostgreSQL database and now Strapi.io.
 
 * Key components:
   * authentication/login which allows access to the publishing of new blog posts
@@ -15,11 +14,6 @@
   * categorized posts
   * admin area with events, messages and application customizable settings
 
-## Getting Started
-
-* Nuggetnova now uses Strapi.io! It greatly simplfies much of the logic and the pain of publishing new content. Feel free to use this as a good example if you wish to use Strapi as well.
-
-
 ## Prerequisites
 
 * mid to deep level understanding of JavaScript
@@ -28,12 +22,7 @@
 
 ## Future plans
 
-* better user friendliness with publishing new articles
-  * Strapi.io accomplishes this!
-* better setup and a more templated version for others who wish to use this
-  *  Strapi.io accomplishes this! 
-* better documentation
-* more customizablity for the application settings
+* none really, in the end I realized this could exist just fine a static file website
 
 ## Built With
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -43,7 +32,6 @@
 * [expressjs](https://expressjs.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Heroku](https://heroku.com)
-* [Strapi](https://strapi.io/)
 
 ## Authors
 
