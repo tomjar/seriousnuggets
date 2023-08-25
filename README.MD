@@ -1,5 +1,5 @@
 # Seriousuggets (simple blogging website)
-* Thanks, the project now is set up as a simple static website so I dont have to deal with database drama. The code that is published and live at https://seriousnuggets.me is the static file version.
+* Thanks, the project now is set up as a simple static website so I dont have to deal with database drama. The code that is published and live at ? is the static file version.
 
 *  So far this has been a huge and fun learning experience. By no means is the code in this repository perfect and neither do I advertise this! This website is currently deployed https://seriousnuggets.me/
 
